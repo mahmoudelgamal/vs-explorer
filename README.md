@@ -7,7 +7,7 @@ https://vs-explorer.netlify.app/
 1. clone the repo
 
 ```shell
-git clone git@github.com:mahmoudelgamal/vs-explorer.git
+git clone https://github.com/mahmoudelgamal/vs-explorer.git
 ```
 
 2. install dependencies
