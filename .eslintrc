@@ -1,0 +1,94 @@
+{
+  "plugins": ["prettier", "unused-imports"],
+  "extends": ["react-app", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "prefer-destructuring": "off",
+    "object-curly-spacing": ["warn", "always"],
+    "unused-imports/no-unused-imports": "error",
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "all",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "all",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 80,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreComments": true
+      }
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "react/jsx-key": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.test.jsx",
+          "**/*.test.ts",
+          "**/*.test.tsx",
+          "src/tests/**/*",
+          ".storybook/**",
+          "stories/**",
+          "**/*.stories.tsx",
+          "**/src/utils/fakers.tsx",
+          "**/src/utils/storybook/*",
+          "src/utils/test-utils.tsx",
+          "**/vite.config.js"
+        ]
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "import/prefer-default-export": "off",
+    "import/newline-after-import": "error",
+    "import/first": "error",
+    "react/jsx-boolean-value": "off",
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/destructuring-assignment": "off",
+    "@typescript-eslint/dot-notation": "off",
+    "@typescript-eslint/lines-between-class-members": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "no-underscore-dangle": "off",
+    "import/no-anonymous-default-export": "off",
+    "react/require-default-props": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.stories.tsx"],
+      "rules": {
+        "react-hooks/rules-of-hooks": "off"
+      }
+    }
+  ]
+}

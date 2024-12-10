@@ -1,0 +1,52 @@
+.explorer {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  padding: var(--spacing-medium);
+  width: 300px;
+  border-right: 1px solid var(--color-border);
+}
+
+.node {
+  margin-left: var(--spacing-small);
+  transition: all var(--transition-speed);
+  list-style: none;
+}
+
+.folder {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--color-folder);
+}
+
+.folder:hover {
+  color: var(--color-selected);
+}
+
+.file {
+  cursor: pointer;
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-radius: 4px;
+  transition: background-color var(--transition-speed);
+}
+
+.file:hover {
+  background-color: var(--color-hover);
+}
+
+.selected {
+  background-color: var(--color-selected);
+  color: white;
+}
+
+.children {
+  margin-left: var(--spacing-medium);
+  transition: max-height var(--transition-speed) ease-in-out;
+}
+
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+}

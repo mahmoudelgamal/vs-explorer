@@ -1,0 +1,21 @@
+.contextMenu {
+  position: absolute;
+  background: var(--color-context-bg);
+  color: var(--color-foreground);
+  border: 1px solid var(--color-border);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  width: 150px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.contextMenu div {
+  padding: var(--spacing-medium);
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.contextMenu div:hover {
+  background-color: var(--color-context-hover);
+}
