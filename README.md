@@ -1,3 +1,7 @@
+# Published Link
+
+https://vs-explorer.netlify.app/
+
 ## How to setup
 
 1. clone the repo
