@@ -30,7 +30,7 @@ yarn dev
 yarn build
 ```
 
-2. run the E2E tests
+2. run the unit tests
 
 ```shell
  yarn test:cov
