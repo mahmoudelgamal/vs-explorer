@@ -1,6 +1,6 @@
 import React from "react";
 import { render, fireEvent, screen, waitFor } from "@testing-library/react";
-import FileExplorer from "./FileExplorer";
+import { FileExplorer } from "./FileExplorer";
 import { FileNode } from "../../data/fileStructure";
 
 const mockData: FileNode[] = [
